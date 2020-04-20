@@ -1,1 +1,152 @@
+%%
+%% This is file `./samples/minutes.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% meetingmins.dtx  (with options: `minutes')
+%% ----------------------------------------------------------------------
+%% 
+%% meetingmins - A LaTeX class for formatting minutes of meetings
+%% 
+%% Copyright (C) 2011-2013 by Brian D. Beitzel <brian@beitzel.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% ----------------------------------------------------------------------
+%% 
+\documentclass[11pt]{meetingmins}
+
+%% Optionally, the following text could be set in the file
+%% department.min in this folder, then add the option 'department'
+%% in the \documentclass line of this .tex file:
+%%\setcommittee{Department of Instruction}
+%%
+%%\setmembers{
+%%  \chair{B.~Smart},
+%%  B.~Brave,
+%%  D.~Claire,
+%%  B.~Gone
+%%}
+
+\setcommittee{RSEP Team 2: Mike and the Gang}
+
+\setmembers{
+	\chair{M.~White},
+	E.~Davis-Fowell (Secretary),
+	A.~Scarlett,
+	V.~Kan,
+	P.~Hawkins,
+	X.~Saney-Morrell
+}
+
+\setdate{April 7, 2020}
+
+\setpresent{
+	\chair{M.~White},
+	E.~Davis-Fowell (Secretary),
+	A.~Scarlett,
+	V.~Kan,
+	P.~Hawkins,
+	X.~Saney-Morrell
+}
+
+\absent{None}
+
+\alsopresent{None}
+
+\begin{document}
+	\maketitle
+	
+	\section{Announcements}
+	\begin{hiddenitems}
+		\item
+		The project subject has been set: Develop a software package collaboratively on GitHub to read an image and apply an open source physics package. 
+		
+		\item
+		The marks awarded will primarily be associated with GitHub behaviour over coding techniques, focusing on pull requests and commit traffic from users.
+		
+	\end{hiddenitems}
+	
+	\section{Sub-Team Reports}
+	
+	\subsection{Image Processing Team {\rm(M. White)}}
+	\subsubsection{Staff}
+	Based on group discussion, it was decided that this subproject should be staffed by M. White and A. Scarlett. The logic around this is it is as closely related to their studies as possible within the specification.
+	
+	\subsubsection{Image Targetting {\rm (A. Scarlett)}}
+	\begin{hiddensubitems}
+		\item
+		Given that the Covid-19 crisis struck during the infancy of the group members' independent research, no member has microstructural images suitable for analysis available. As such, it was deemed appropriate to seek an independent image to analyse to develop the technique rather than useful results. This also has the added benefit of tailoring the software by pairing the image against published data relating to the physic package we intend to develop.
+		
+		\item
+		Given members' prior experience with the material, SA508 steel was selected as a target candidate to search for microstructural images of. The task of searching for images is considered project-wide rather than isolated to the Image Targetting team considering the time-frame of the project.
+	\end{hiddensubitems}
+	
+	\subsection{Mathematical Modelling {\rm (E. Davis-Fowell)})}
+	\subsubsection{Staff}
+	This subproject will be primarily run by E. Davis-Fowell and P. Hawkins. This was decided on professional backgrounds under the proviso that coding implementation issues would be resolved by the group as a whole once the background theory and mathematics were calculated.
+	
+	\subsubsection{Target Area and Model}
+	Given the unrelated nature of many of the individual members research areas, there was to common ground to decide on an area of interest to model. There was also a drive within the group to keep the area of investigation non-quantum and based on FEM to ensure that the code and surrounding theory was trivial to develop. This then led to the selection of the SfePy libray and the associated thermoelastic modelling protocols contained within to allow both for the loading of examples and for trivial problems to be solved analytically to debug code.
+	
+	\subsection{Applications {\rm(V. Kan)}}
+	\subsubsection{Staff}
+	The remaining project members, V. Kan and X. Morrell will be assigned to this task. This was based upon their background in Python coding and analytical materials models respectively
+	
+	\subsubsection{Tasking}
+	The purpose of this group will be to marry the mathematical models to the image processed and mapped by the Image Processing Team. This will involve developing a finite element system to capture the data quantisation associated with the image post-processing that is compatible with the geometry developed through the SfePy library.
+	
+	\section{Old Business}
+	\begin{items}
+		\item
+		No Old Minutes to approve
+	\end{items}
+	
+	\section{New Tasking}
+	\begin{items}
+		\item
+		An image must be selected for the Image Analysis team to begin work developing sort algorithms .
+		
+		\item
+		The non-Image team members must also spend time familiarising themselves with the SfePy architecture to begin development of a mathematical model following material selection.
+	\end{items}
+	
+	\vspace{1em}
+	\nextmeeting{Friday, April 24th, at 13:00}
+	
+\end{document}
+%% 
+%% Copyright (C) 2011-2013 by Brian D. Beitzel <brian@beitzel.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Brian D. Beitzel.
+%% 
+%% This work consists of the file  meetingmins.dtx
+%% and the derived files           meetingmins.cls,
+%%                                 sampleminutes.tex,
+%%                                 department.min,
+%%                                 README.txt, and
+%%                                 meetingmins.pdf.
+%% 
+%%
+%% End of file `./samples/minutes.tex'.
 
